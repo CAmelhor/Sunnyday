@@ -1,0 +1,104 @@
+body{
+    background-image: url("./images/maisema.png");
+    background-size: 100% 150%;
+}
+
+
+
+.car {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 27%;
+    background-image: url("/sunnyday/images/car.png");
+    animation: moveCar 15s infinite;
+}
+@keyframes moveCar{
+    0%{
+        transform: translate(-1002px);
+    }
+    100%{
+        transform: translate(1500px);
+    }
+}
+
+
+.sun{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    
+    animation: moveSun 20s linear forwards;
+}
+
+@keyframes moveSun {
+    0%{
+        transform: translate(0, 450px);
+    }
+
+    25% {
+        transform: translate(100px);
+    }
+    50% {
+        transform: translate(500px);
+    }
+    75% {
+        transform: translate(900px);
+    }
+    100% {
+        transform: translate(1500px, 1500px);
+    }
+}
+
+.cloud_w_rain {
+    bottom: 100%;
+    height: 450px;
+    right: -170px;
+    background-image: url("/sunnyday/images/cloud_w_rain.png");
+    animation: moveCloud_w_rain 10s infinite;
+}
+@keyframes moveCloud_w_rain{
+    0%{
+        transform: translateX(1700px);
+    }
+    100%{
+        transform: translateX(-1100spx);
+    }
+}
+
+
+.rainy {
+    position: absolute;
+    height: 100px;
+    right: -100px;
+    bottom: 96%;
+    background-image: url("/sunnyday/images/rainy.png");
+    animation: moveRainy 10s infinite;
+}
+@keyframes moveRainy {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.cloud{ 
+    position: absolute;
+    height: 100px;
+    right: -170px;
+    bottom: 90%;
+    background-image: url("/sunnyday/images/cloud.png");
+    animation: moveCloud 15s linear infinite;
+}
+@keyframes moveCloud{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+@keyframes bgClor {
+    0%{
+        background-color: black;
+    }
+    100%{
+        background-color: black;
+    }
+}
